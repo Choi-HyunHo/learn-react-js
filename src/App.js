@@ -1,11 +1,18 @@
 import './App.css';
 
+import MyHeader from './my_header';
+
 function App() {
+  const name = 'hyunho';
+  const number = 10;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <h2>안녕 리액트</h2>
-      </header>
+      <MyHeader />
+      <h2>안녕 리액트 {name}</h2>
+      <h2>
+        {number}는 : {number % 2 === 0 ? '짝수' : '홀수'}
+      </h2>
     </div>
   );
 }
